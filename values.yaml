@@ -1,4 +1,3 @@
-# Default values for jenkins-test.
-# This is a YAML-formatted file.
-# Declare variables to be passed into your templates.
-
+deployment:
+  image: "jenkins"
+  tag: "2.32.2"
