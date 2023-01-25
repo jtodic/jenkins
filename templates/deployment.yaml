@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: myapp-jenkins
+spec:
+  selector:
+    matchLabels:
+      app: myapp-jenkins
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: myapp-jenkins
+    spec:
+      containers:
+      - name: myapp-jenkins
+        image: jenkins:2.32.2
+        ports:
+        - containerPort: 8080
