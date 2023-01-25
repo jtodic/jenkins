@@ -6,11 +6,12 @@ metadata:
 spec:
   project: default
   source:
-    chart: jenkins-test
-    repoURL: https://github.com/jtodic/jenkins.git
+    repoURL: 'https://github.com/jtodic/jenkins.git'
+    path: .
     targetRevision: HEAD
     helm:
-      releaseName: jenkins-test
+      valueFiles:
+        - values.yaml
   destination: 
     server: https://kubernetes.default.svc
     namespace: test
