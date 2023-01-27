@@ -1,3 +1,0 @@
-deployment:
-  image: "jenkins"
-  tag: "2.32.3"

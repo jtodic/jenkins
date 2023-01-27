@@ -7,7 +7,7 @@ spec:
   project: default
   source:
     repoURL: 'https://github.com/christianh814/kbe-apps.git'
-    path: /02-working-with-helm/repo/
+    path: 02-working-with-helm/repo/
     targetRevision: HEAD
     helm:
       valueFiles:
